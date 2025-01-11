@@ -9,8 +9,9 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/users")
-@CrossOrigin("http://localhost:3000/")
+//@CrossOrigin("http://localhost:3000/")
 //@CrossOrigin("https://stocktrackerapp.vercel.app/")
+@CrossOrigin(origins = {"http://localhost:3000", "https://stocktrackerapp.vercel.app"})
 public class UserController {
 
     @Autowired
